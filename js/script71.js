@@ -27,7 +27,11 @@ function calcolatrice(x, y, opCode) {
             break;
     
         case "/":
-            retVal = x / y;
+            if (y != 0) {
+                retVal = x / y;
+            } else {
+                retVal = 'NaN';
+            }
             break;
     
         default:
